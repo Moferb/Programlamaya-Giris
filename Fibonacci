@@ -1,0 +1,25 @@
+package FibonacciJava;
+
+public class FibonnacciJava
+{
+ public static void main(String args[])
+ {
+     /*Fibonacci= 1 1 diye başlayıp kendinden önceki sayıyla toplanıp
+       bir sonraki adıma o sayı bastırılır*/
+     //Fibonacci 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987
+     int i=0;
+     int j=1;
+     System.out.println("Fibonacci:");
+     for(;i<=1000;i=i+j)
+     {
+         if(i!=0)
+         {
+             System.out.println(j);
+             System.out.println(i);
+         }
+
+         j=j+i;
+
+     }
+ }
+}
